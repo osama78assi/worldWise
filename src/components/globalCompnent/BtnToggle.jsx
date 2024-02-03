@@ -6,7 +6,7 @@ function BtnToggle({ onToggle, defineClass = "" }) {
       className={`${style["btn-toggle"]} ${defineClass}`}
       onClick={() => onToggle()}
     >
-      <img src="./public/burger-menu-svgrepo-com.svg"></img>
+      <img src="./burger-menu-svgrepo-com.svg"></img>
     </button>
   );
 }
