@@ -1,0 +1,27 @@
+.btn-toggle {
+  display: none;
+  height: 4rem !important;
+  border-radius: 0.5rem;
+  background-color: #ddd;
+  transition: 0.5s background-color;
+  cursor: pointer;
+}
+
+.btn-toggle:hover {
+  background-color: #eee;
+}
+
+.btn-toggle img {
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .btn-toggle {
+    display: block !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .btn-toggle {
+    align-self: flex-end;
+  }
+}

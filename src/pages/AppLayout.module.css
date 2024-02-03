@@ -1,0 +1,35 @@
+.app {
+  height: 100vh;
+  padding: 1.4rem;
+  overscroll-behavior-y: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.hidden {
+  pointer-events: all;
+  opacity: 1;
+}
+
+
+.btn-sidebar {
+  position: absolute !important;
+  left: 2.4rem !important;
+  top: 8.8rem !important;
+  height: 35px !important;
+  opacity: 0.7 !important;
+  transition-property: background-color, opacity;
+  z-index: 1002;
+}
+
+.btn-sidebar:hover {
+  opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .hidden {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
