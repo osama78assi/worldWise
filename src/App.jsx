@@ -18,7 +18,7 @@ import { AuthProvider } from "./contexts/FakeAuthContext";
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="worldWise/">
         <Suspense fallback={<SpinnerFullPage />}>
           <Routes>
             <Route index element={<HomePage />} />

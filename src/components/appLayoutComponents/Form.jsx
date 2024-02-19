@@ -75,9 +75,8 @@ function Form() {
   const [{ status, cityName, country, msg, emoji, date, notes }, dispatchForm] =
     useReducer(formReducer, initialFormState);
 
-  const requestController = new AbortController();
-
   useEffect(() => {
+    const requestController = new AbortController();
     if (!lat && !lng) {
       dispatchForm({
         type: "err",
